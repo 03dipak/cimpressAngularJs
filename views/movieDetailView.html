@@ -1,0 +1,19 @@
+<div class="container">
+	<div id='detailbackimg'>
+		<img src="https://image.tmdb.org/t/p/w1280{{movieDetailData.backdropURL}}" alt="{{movieDetailData.slug}}">
+	</div>
+	<div id='detailposter'>
+		<img src="https://image.tmdb.org/t/p/w500{{movieDetailData.posterURL}}" alt="{{movieDetailData.slug}}" >
+	</div>
+
+	<p><a href="/listMovie"><h4>Back</h4></a></p>
+	<div ng-controller="movieList">
+		<button ng-click="removeMovie()">Delete Movie</button>
+
+	</div>
+	<div id="movieTitle"><h2>{{movieDetailData.title}}</h2></div>
+
+	<div id="movieReleaseDate">{{movieDetailData.releaseDate | date:'medium'}}</div>
+
+	<div id="moviePlot">{{movieDetailData.plot}}</div>
+</div>

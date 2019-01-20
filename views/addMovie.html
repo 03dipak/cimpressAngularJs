@@ -1,0 +1,23 @@
+<div class="container">
+  <form name="addMovie" novalidate>
+    <div class="form-group row">
+      <label for="staticEmail" class="col-sm-2 col-form-label">Movie Title</label>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" ng-model="newMovie.title" id="staticEmail" placeholder="Enter Movie Title"  ng-required="true">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="formfile" class="col-sm-2 col-form-label">Movie Poster</label>
+      <div class="col-sm-3">
+        <input type="file" class="form-control-file" ng-model="newMovie.file" id="formfile" ng-required="true">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Movie Plot</label>
+      <div class="col-sm-3">
+        <textarea type="text" class="form-control" ng-model="newMovie.plot" id="inputPassword" placeholder="Enter Movie Plot" ng-required="true"></textarea>
+      </div>
+    </div>
+    <input type="submit" name="Add Movie Detals" value="addNewMovie">
+  </form>
+</div>

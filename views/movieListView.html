@@ -1,0 +1,13 @@
+	<div ng-repeat="movielist in movieDatas">
+		<div class="col-xs-6 col-sm-3" height="260" width="261" id="listMoveLoad">
+		<!-- <div class="col-xs-6 col-sm-3" style="background-color:lavender;" > -->
+			<a href="detailMovie/{{movielist._id}}">
+				<div> <img src="https://image.tmdb.org/t/p/w500{{movielist.posterURL}}" alt="{{movielist.slug}}" height="250" width="261"></div>
+				<div class="bg-info"> {{movielist.title}}</div>
+				<div class="bg-info bg-info ml-md-2"> {{movielist.releaseDate | date:'medium' }}</div>
+			</a>
+		</div>
+
+	</div>
+	<!-- Add the extra clearfix for only the required viewport -->
+	<div class="clearfix visible-xs-block"></div>
